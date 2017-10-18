@@ -1,0 +1,29 @@
+@import "../src/components/common.styl"
+
+// 覆盖mint-ui样式
+.mint-header
+  background-color $c-primary-darker
+.mint-button
+  border-radius 10px
+.mint-button--primary
+  background-color $c-primary-normal
+.mint-msgbox .mint-msgbox-confirm
+  color $c-primary-normal
+
+.mint-navbar
+  .mint-tab-item
+    &.is-selected
+      color $c-primary-normal
+      border-bottom 3px solid $c-primary-normal
+
+.mint-radio
+  .mint-radio-input
+    &:checked + .mint-radio-core
+      border-color $c-primary-normal
+      background-color $c-primary-normal
+
+.mint-checkbox
+  .mint-checkbox-input
+    &:checked + .mint-checkbox-core
+      border-color $c-primary-normal
+      background-color $c-primary-normal
