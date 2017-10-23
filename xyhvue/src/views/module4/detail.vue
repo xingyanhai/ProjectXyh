@@ -5,7 +5,7 @@
 -->
 <template>
   <div>
-    3
+detail
   </div>
 </template>
 
@@ -19,7 +19,6 @@
   // 方法
 
   // 接口
-  import { apiMusic } from '../../api/music/music'
 
   export default {
     // 组件
@@ -40,14 +39,7 @@
     methods: {},
 
     // 组件生命周期钩子，一般常用的是 mounted
-    mounted () {
-      apiMusic('topList', (res) => {
-        console.log(res)
-        apiMusic({name: 'hotList', params: {}}, (res) => {
-          console.log(res)
-        })
-      })
-    }
+    mounted () {}
   }
 </script>
 

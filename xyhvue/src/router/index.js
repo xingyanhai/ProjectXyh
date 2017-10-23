@@ -7,7 +7,9 @@ import Detail1 from '../views/module1/detail.vue'
 import Module2 from '../views/module2/index.vue'
 import Detail2 from '../views/module2/detail.vue'
 import Module3 from '../views/module3/index.vue'
+import Detail3 from '../views/module3/detail.vue'
 import Module4 from '../views/module4/index.vue'
+import Detail4 from '../views/module4/detail.vue'
 
 Vue.use(Router)
 
@@ -40,12 +42,7 @@ export default new Router({
               component: Module2,
               meta: {
                 isShowNav: true
-              },
-              children: [{
-                path: 'detail',
-                name: 'detail',
-                component: Detail2
-              }]
+              }
             },
             {
               path: '/module3',
@@ -67,6 +64,21 @@ export default new Router({
               path: 'detail1',
               name: 'detail1',
               component: Detail1
+            },
+            {
+              path: 'detail2',
+              name: 'detail2',
+              component: Detail2
+            },
+            {
+              path: 'detail3',
+              name: 'detail3',
+              component: Detail3
+            },
+            {
+              path: 'detail4',
+              name: 'detail4',
+              component: Detail4
             }
           ]
         },
